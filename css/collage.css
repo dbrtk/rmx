@@ -1,0 +1,69 @@
+
+
+body {
+    background-color: gray;
+    font-size: 100%;
+}
+
+/* defualt rules */
+h1, h2, h3 {
+    color: white;
+    font-familly: Lato;
+}
+p, span, textarea, div, input[type=text] input {
+    font-family: Lato;
+    font-size: 0.875em;
+    line-height: 1.5em;
+    color: black;    
+}
+textarea {
+    padding: 3px;
+}
+textarea, input {
+    margin: 3px 0px 3px 0px;
+}
+form, fieldset, input, textarea, legend, form {
+    display: block;
+}
+
+header {
+    font-familly: Lato;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+
+
+
+
+/* custom rules */
+div[class~=data-info-box] {
+    padding: 5px 20px 5px 20px;
+    position: absolute;
+    word-wrap: break-word;
+    background-color: #001D39;
+}
+div[class~=data-info-box] a {
+    color: white;
+}
+
+div[class~=data-box][class~=images] {
+    display: flex;
+}
+
+
+div[class~=data-container] {
+    display: flex;
+}
+div[class~=images]>div[class~=img-box] {
+    
+    position: absolute;
+}
+
+/* div[class~=data-container]>div[class~=data-box] { */
+/*     display: block; */
+/*     flex: 1; */
+/* } */
+

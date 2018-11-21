@@ -1,0 +1,45 @@
+<div class="features-container-loaded">
+  {{#features}}
+  <div class="feats-docs">
+
+    
+    <div class="feature feature-words container">
+
+      {{#features}}
+      <div class="feature-word feature-weight">
+        <div class="word">{{word}}</div>
+        <div class="weight">{{#toFixed}}{{weight}}{{/toFixed}}</div>
+      </div>
+      {{/features}}
+    </div>
+    
+    <div class="documents container for-feat">
+      
+      {{#docs}}
+      
+      <div class="document for-feat">
+
+        <div class="title-box">
+          <span class="title">{{title}}</span><br>
+        </div>
+
+        <div class="weight">
+          <span>{{#toFixed}}{{weight}}{{/toFixed}} - weight</span><br>
+        </div>
+        
+        <div class="links">
+          <a target="_blank" href="{{url}}">{{url}}</a>
+        </div>
+
+	
+	<div class="context-box" data-fileid="{{fileid}}">
+	  <span class="sentence-loader">Loading sentences containing feature words... </span>
+	</div>
+	
+      </div>
+      {{/docs}}
+    </div>
+    
+  </div>
+  {{/features}}
+</div>

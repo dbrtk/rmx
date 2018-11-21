@@ -1,0 +1,60 @@
+
+/* h1[class~=rmxlogo] { */
+/*     font-family: Lato; */
+/*     font-weight: bold; */
+/*     font-size: 80px; */
+/*     /\* color: #003D5C; *\/ */
+/*     color: #fff; */
+/*     text-shadow:0px 0px 1px blue; */
+/* } */
+
+/* span[class~=rmxlogo] { */
+/*     font-family: Lato; */
+/*     font-size: 16px; */
+/* } */
+
+div[class~=rmx-header] {
+    
+}
+
+
+div[class~=rmxlogo] {
+    display: block;
+    background-color: #000;
+    /* background-color: #2F4F4F; */
+}
+div[class~=logo-collages] {
+    display: block;
+    padding: 45px 50px;
+}
+
+span[class~=rmxlogo][class~=outline], span[class~=rmxlogo][class~=block] {
+    font-family: 'Helvetica';
+    font-weight: normal;
+    font-size: 80px;
+}
+/* span[class~=rmxlogo][class~=block]:hover { */
+/*     color: #000; */
+/*     text-shadow:0px 0px 1px #fff;     */
+/* }  */
+/* span[class~=rmxlogo][class~=outline]:hover { */
+/*     text-shadow:0px 0px 0px; */
+/*     color: white; */
+/* } */
+
+span[class~=rmxlogo][class~=outline] {
+    color: #fff;
+    
+    /* text-shadow:0px 0px 1px #fff; */
+}
+span[class~=rmxlogo][class~=block]{ 
+    /* color: #003D5C; */
+    color: #006699;
+}
+
+
+
+
+
+
+

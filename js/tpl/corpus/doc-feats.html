@@ -1,0 +1,41 @@
+
+<div class="features-container-loaded">
+  {{#documents}}
+  <div class="feats-docs">
+    
+    
+    <div class="document for-feat feats-doc">
+      
+      <div class="title-box">
+        <span class="title">{{title}}</span><br>
+      </div>
+      
+      <div class="links">
+        <a target="_blank" href="{{url}}">{{url}}</a>
+      </div>
+      
+    </div>
+    
+    <div class="features container">
+      
+      {{#feats}}
+      
+      <div class="feature feature-words container">
+        
+        <div class="feat-weight" data-weight="{{ weight }}">
+        </div>          
+        {{#features}}
+
+        <div class="feature-word feature-weight">
+          <div class="word">{{word}}</div>
+          <div class="weight">{{weight}}</div>
+        </div>
+        {{/features}}
+      </div>
+      
+      {{/feats}}      
+    </div>
+    
+  </div>
+  {{/documents}}
+</div>

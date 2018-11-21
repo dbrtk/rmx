@@ -1,0 +1,207 @@
+
+
+
+div.features-container-loaded {
+
+    display: block;
+}
+
+
+/* div.feats-docs>div.feature-words { */
+/*     display: -webkit-flex; /\* Safari *\/ */
+/*     -webkit-flex-direction: column; /\* Safari 6.1+ *\/ */
+/*     display: flex; */
+/*     flex-direction: column;  */
+/* } */
+
+div.features-container>div.form-container {
+
+    displaay: block;
+    
+}
+
+div.features-container>div.form-container > form > div {
+
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+
+}
+
+div.features-container>div.form-container fieldset {
+    
+    border: 0;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    margin-right: 150px;
+}
+div.features-container>div.form-container fieldset > input,
+div.features-container>div.form-container fieldset > select {
+
+    margin-bottom: 10px;
+}
+
+div.features-container>div.form-container fieldset select[name=existingfeat],
+div.features-container>div.form-container fieldset input[name=features] {
+    min-width: 200px;   
+}
+
+
+div.feats-docs>div.feature>div.feature-word,
+div.features>div.feature>div.feature-word {
+
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+
+}
+
+div.feats-docs div.feature>div.feature-word>div.word,
+div.feats-docs>div.document span.title,
+div.feats-docs>div.documents span.title {
+    font-size: 18px;
+}
+div.feats-docs div.feature>div.feature-word>div.word {
+    color: blue;
+}
+
+li>span>span.match  {
+
+    color: blue;
+    background: white;
+}
+
+div.feats-docs > div.features > div.feature {
+    display: block
+}
+div.feats-docs > div.features > div.feature > div {
+    display: inline-block;
+}
+
+div.feat-weight {
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+div.feat-weight > div.weight-txt {
+
+    font-size: 20px; 
+}
+
+
+
+
+
+div.feats-docs>div.documents div.weight {
+    color: #545454 !important;
+}
+
+div.feats-docs {
+    display: block;
+}
+
+div.feats-docs>div.features,
+div.feats-docs>div.documents {
+    padding-left: 25px;
+    /* padding: 25px; */
+    display: block;
+    /* background-color: #333300; */
+}
+
+div.feats-docs>div.documents>div.document {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-right: 25px;
+    display: table;
+    
+    max-width: 800px;
+    
+    /* border: 1px solid #5F9EA0; */
+    border-radius: 3px;
+
+    /* background-color: #d9d9d9; */
+}
+
+
+
+div.feats-docs>div.documents ul.links {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    list-style-type: circle;
+}
+
+
+
+
+/* .node { */
+/*   stroke: #000; */
+/*   stroke-width: 1.5px; */
+/* } */
+
+.link, .links {
+  stroke: #999;
+  stroke-width: 1.5px;
+}
+
+.nodes text, .node text {
+  font: 9px helvetica;
+}
+
+
+div.tooltip {
+    position: absolute;
+    
+    min-width: 250px;
+    max-width: 280px;
+    min-height: 30px;
+    
+    overflow: auto;
+    overflow-wrap: break-word;
+    
+    vertical-align: text-center;
+    
+    font-size: 14px;
+    
+    color: black;
+    background: #fff;
+
+    border: 1px solid black;
+    border-radius: 3px;
+
+    pointer-events: none;
+}
+div.tooltip > p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+div.tooltip > p > span.info {    
+    color: gray;
+}
+div.tooltip > p > span.featword {
+    color: red;
+}
+
+
+div[class~=features-container]>div.features-html span.sentence-loader {
+    color: magenta;
+    font-size: 18px;
+}
+
+
+div.features-html div.documents div.links>a,
+div.features-container div.context-box>ul>li>span,
+div.features-container div.context-box>ul>li>span>span {
+
+    font-size: 16px;
+
+}
+
+
+

@@ -1,0 +1,21 @@
+
+
+
+footer.rmx-footer {
+    /* width: auto; */
+    background-color: gray;
+
+    width: 100%;
+    
+    padding: 30px 0px 50px 0px; 
+}
+
+footer.rmx-footer>div[class~=rmx-info] {
+
+    margin: 10px 100px;
+}
+
+div.spacing-div {    
+
+    flex: 1;
+}
