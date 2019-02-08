@@ -8,10 +8,10 @@ body {
 /* defualt rules */
 h1, h2, h3 {
     color: white;
-    font-familly: Lato;
+
 }
 p, span, textarea, div, input[type=text] input {
-    font-family: Lato;
+
     font-size: 0.875em;
     line-height: 1.5em;
     color: black;    
@@ -27,7 +27,7 @@ form, fieldset, input, textarea, legend, form {
 }
 
 header {
-    font-familly: Lato;
+
     background-color: black;
     color: white;
     text-align: center;

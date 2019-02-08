@@ -60,10 +60,8 @@ corpus.view = (function () {
     };
     _corpus.prototype.showServerMsg = function (data) {
 
-        console.log('dasd', data);
-
         var msg = data.msg;
-        
+
         d3.select('div.features-container > div.server-msg')
             .datum(data)
             .append('div')

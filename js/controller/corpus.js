@@ -98,7 +98,11 @@ var CorpusConrtroller = (function () {
 	    
 	});
         if (this.getStatus() ===  'newly-created') {
-            this.disable();
+            this.disable('Corpus being created...');
+            this.corpusready();
+        }
+        else if (this.getStatus() ===  'file-upload') {
+            this.disable('File upload in progress...');
             this.corpusready();
         }
     };
@@ -502,13 +506,16 @@ var CorpusConrtroller = (function () {
 
         fieldset.querySelector('input[name=features]').value = '';
     };
-    _ctl.prototype.disable = function () {
-
+    _ctl.prototype.disable = function (message = undefined) {
+        var msg = '';
+        if (message) {
+           msg = message;
+        } else {
+           msg = 'The server is busy...';
+        }
         this.view.showServerMsg({
-            msg: 'Corpus being created...'
+            msg: msg
         });
-        
-
         document.querySelectorAll('button, select, input').forEach(
             function (d) {
                 d.disabled = true;

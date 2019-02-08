@@ -19,7 +19,7 @@ body {
 }
 
 h1, h2, h3 {
-    font-familly: 'Lato', sans-serif;
+
 }
 
 p.site-info {
@@ -29,8 +29,7 @@ p.site-info {
 }
 
 p, span, textarea, div, input[type=text] input {
-    font-family: 'Lato', sans-serif;
-    /* font-family: Lato,sans-serif,clean,arial !important; */
+
     /* font-size: 14px; */
     /* line-height: 18px; */
     
@@ -54,7 +53,6 @@ form, fieldset, input, textarea, legend, form {
 }
 
 header {
-    font-familly: 'Lato', sans-serif;
     background-color: black;
     color: white;
     text-align: center;
