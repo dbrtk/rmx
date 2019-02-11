@@ -97,14 +97,10 @@ var CorpusConrtroller = (function () {
 	    "select[name=existingfeat]": me.changeFeatures.bind(me)
 	    
 	});
-        if (this.getStatus() ===  'newly-created') {
-            this.disable('Corpus being created...');
-            this.corpusready();
-        }
-        else if (this.getStatus() ===  'file-upload') {
-            this.disable('File upload in progress...');
-            this.corpusready();
-        }
+    	if (this.getStatus()) {
+	        this.disable();
+	        this.corpusready();
+	    }
     };
     _ctl.prototype.getStatus = function () {
 
@@ -293,12 +289,14 @@ var CorpusConrtroller = (function () {
     
     _ctl.prototype.xhrFeatures = function (dataObj, action_name) {
 
+        if (this.getStatus())
+            return
 
         var url, callback, me = this, docid = getDocId();
         this.action_name = action_name;
 
         me.view.hideServerMsg();
-        
+
         switch (action_name) {
         case 'force-directed-graph':
             url = '/corpus/' + docid + '/force-directed-graph/';
@@ -506,16 +504,8 @@ var CorpusConrtroller = (function () {
 
         fieldset.querySelector('input[name=features]').value = '';
     };
-    _ctl.prototype.disable = function (message = undefined) {
-        var msg = '';
-        if (message) {
-           msg = message;
-        } else {
-           msg = 'The server is busy...';
-        }
-        this.view.showServerMsg({
-            msg: msg
-        });
+    _ctl.prototype.disable = function () {
+
         document.querySelectorAll('button, select, input').forEach(
             function (d) {
                 d.disabled = true;
