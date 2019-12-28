@@ -109,9 +109,9 @@ var CorpusConrtroller = (function () {
     _ctl.prototype.corpusready = function () {
         var iid, url;
         if (UseWorker === true)
-            url = window.location.origin + window.location.pathname + 'corpus-crawl-ready-light';
+            url = window.location.origin + window.location.pathname + 'container-crawl-ready-light';
         else
-            url = window.location.origin + window.location.pathname + 'corpus-crawl-ready';
+            url = window.location.origin + window.location.pathname + 'container-crawl-ready';
         iid = setInterval(function () {
 
             d3.json(url, function (err, resp) {
