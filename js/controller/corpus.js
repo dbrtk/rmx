@@ -172,7 +172,7 @@ var CorpusConrtroller = (function () {
                 me.socket.send(JSON.stringify(data));
             }
             else
-                var url = '/corpus/' + getDocId() + '/is-ready/' + _features + '/';
+                var url = '/container/' + getDocId() + '/is-ready/' + _features + '/';
                 d3.json(url, function (err, data) {
                     if (err) {
                         console.log('err');
@@ -299,13 +299,13 @@ var CorpusConrtroller = (function () {
 
         switch (action_name) {
         case 'force-directed-graph':
-            url = '/corpus/' + docid + '/force-directed-graph/';
+            url = '/container/' + docid + '/force-directed-graph/';
             callback = function (resp) {
                 me.loadGraph(docid, resp);
             };
             break;
         case 'features':
-            url = '/corpus/' + docid + '/features-html/';
+            url = '/container/' + docid + '/features-html/';
             callback = function (resp) {
                 me.loadFeaturesView(docid, resp);
             };

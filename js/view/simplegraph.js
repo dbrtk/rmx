@@ -496,7 +496,7 @@ var SimpleGraph = (function () {
 
 	var container = "div[class~=features-container]>div.features-html";
 	rmxutils.xhr(
-	    '/corpus/' + corpusid + '/context/?lemma=' + lemma.join(),
+	    '/container/' + corpusid + '/context/?lemma=' + lemma.join(),
 	    
 	    function (jsonResp) {
 		jsonResp = JSON.parse(jsonResp);
